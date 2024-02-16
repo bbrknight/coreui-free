@@ -1,0 +1,20 @@
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products; index as i">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ product.product_name }}</td>
+            <td>{{ product.product_category_id }}</td>
+            <td>{{ product.sell_price }}</td>
+            <td><a class="btn btn-sm btn-primary" [routerLink]="['/detail/{{product.id}}']">view</a></td>
+        </tr>
+        </tbody>
+</table>
