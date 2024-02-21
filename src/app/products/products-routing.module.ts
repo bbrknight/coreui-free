@@ -19,11 +19,11 @@ const routes: Routes = [
         component: ListComponent
       },
       {
-        path: 'update:id',
+        path: 'update/:id',
         component: UpdateComponent
       },
       {
-        path: 'detail:id',
+        path: 'detail/:id',
         component: DetailComponent
       }
     ]

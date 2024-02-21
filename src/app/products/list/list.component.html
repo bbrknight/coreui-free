@@ -14,7 +14,7 @@
             <td>{{ product.product_name }}</td>
             <td>{{ product.product_category_id }}</td>
             <td>{{ product.sell_price }}</td>
-            <td><a class="btn btn-sm btn-primary" [routerLink]="['/detail/{{product.id}}']">view</a></td>
+            <td><a class="btn btn-sm btn-primary" routerLink="../detail/{{product.id}}">view</a></td>
         </tr>
         </tbody>
 </table>
